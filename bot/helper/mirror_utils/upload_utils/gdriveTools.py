@@ -117,7 +117,7 @@ class GoogleDriveHelper:
                                      resumable=False)
         file_metadata = {
             'name': file_name,
-            'description': 'Uploaded using Nobita Mirror Bot',
+            'description': 'Uploaded using Siam Mirror Bot',
             'mimeType': mime_type,
         }
         if parent_id is not None:
@@ -171,7 +171,7 @@ class GoogleDriveHelper:
         # File body description
         file_metadata = {
             'name': file_name,
-            'description': 'Uploaded by Nobita Mirror Bot',
+            'description': 'Uploaded by Siam Mirror Bot',
             'mimeType': mime_type,
         }
         try:
@@ -557,9 +557,9 @@ class GoogleDriveHelper:
                     content += f'<b> | <a href="https://telegra.ph/{self.path[nxt_page]}">Next</a></b>'
                     nxt_page += 1
             Telegraph(access_token=telegraph_token).edit_page(path = self.path[prev_page],
-                                 title = 'Nobita Mirror Bot Search',
-                                 author_name='Nobita',
-                                 author_url='https://t.me/nobita_o',
+                                 title = 'Siam Mirror Bot Search',
+                                 author_name='Siam',
+                                 author_url='https://t.me/SiamBillah72',
                                  html_content=content)
         return
 
@@ -642,9 +642,9 @@ class GoogleDriveHelper:
 
             for content in self.telegraph_content :
                 self.path.append(Telegraph(access_token=telegraph_token).create_page(
-                                                        title = 'Nobita Mirror Bot Search',
-                                                        author_name='Nobita',
-                                                        author_url='https://github.com/nobita-o/nobita-mirrorbot',
+                                                        title = 'Siam Mirror Bot Search',
+                                                        author_name='Siam',
+                                                        author_url='https://github.com/SiamBillah72',
                                                         html_content=content
                                                         )['path'])
 
